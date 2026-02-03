@@ -30,6 +30,7 @@ function calculateBalance() {
 function updateBalanceColor() {
   let porcentaje = budgetValue * 0.25;
   let resultado = budgetValue - porcentaje;
+  let balanceColor = "";
 
   if (calculateBalance() <= 0) {
     balanceColor = "red";
