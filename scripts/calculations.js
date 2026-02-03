@@ -28,10 +28,10 @@ function calculateBalance() {
 
 // 7.
 function updateBalanceColor() {
-  let currentBalance = calculateBalance();
-  if (currentBalance < 0) {
+  const balance = calculateBalance();
+  if (balance < 0) {
     balanceColor = "red";
-  } else if (currentBalance < budgetValue * 0.25) {
+  } else if (balance < budgetValue * 0.25) {
     balanceColor = "orange";
   } else {
     balanceColor = "green";
