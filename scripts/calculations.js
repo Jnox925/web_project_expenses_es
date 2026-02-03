@@ -29,6 +29,8 @@ function calculateBalance() {
 // 7.
 function updateBalanceColor() {
   const balance = calculateBalance();
+  let balanceColor = "";
+
   if (balance < 0) {
     balanceColor = "red";
   } else if (balance < budgetValue * 0.25) {
@@ -36,6 +38,8 @@ function updateBalanceColor() {
   } else {
     balanceColor = "green";
   }
+
+  return balanceColor;
 }
 // 8.
 function calculateCategoryExpenses(categoryName) {
